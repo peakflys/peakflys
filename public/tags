@@ -1,0 +1,160 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+BYTE	Type.h	/^typedef unsigned char BYTE;$/;"	t
+CCriticalSection	CThread.h	/^		CCriticalSection()$/;"	f	class:CCriticalSection
+CCriticalSection	CThread.h	/^class CCriticalSection$/;"	c
+CHECK_PSW_CMD	command.h	/^const BYTE CHECK_PSW_CMD = 1;$/;"	v
+CThread	CThread.h	/^class CThread$/;"	c
+CXX	Makefile	/^CXX = g++$/;"	m
+DEBUG_FLAG	Makefile	/^DEBUG_FLAG = -O0 -g3 -Wall -c$/;"	m
+DWORD	Type.h	/^typedef unsigned int DWORD;$/;"	t
+ERROR_COMMON	command.h	/^	ERROR_COMMON = 0;\/\/正常状态$/;"	e	enum:__anon1
+ERROR_HASUSER	command.h	/^	ERROR_HASUSER = 3;\/\/帐号重复$/;"	e	enum:__anon1
+ERROR_NOUSER	command.h	/^	ERROR_NOUSER = 1;\/\/无帐号$/;"	e	enum:__anon1
+ERROR_PSWERR	command.h	/^	ERROR_PSWERR = 2;\/\/密码错误$/;"	e	enum:__anon1
+EVENTS	server.cpp	14;"	d	file:
+LIBS	Makefile	/^LIBS := -lpthread$/;"	m
+LOGIN_CMD	command.h	3;"	d
+Lock	CThread.h	/^		void Lock(){pthread_mutex_lock (&m_pLock);}$/;"	f	class:CCriticalSection
+Log	Log.h	/^		Log(std::string &_name):name(_name){}$/;"	f	class:Log
+Log	Log.h	/^class Log$/;"	c
+MAXFDS	server.cpp	13;"	d	file:
+MAX_LOGBUFF	Log.h	/^const unsigned int MAX_LOGBUFF  = 4*1024;$/;"	v
+MAX_NAMESIZE	Type.h	/^const BYTE MAX_NAMESIZE = 32;$/;"	v
+MAX_PSWSIZE	Type.h	/^const BYTE MAX_PSWSIZE = 32;$/;"	v
+MAX_USERDATA	Type.h	/^const BYTE MAX_USERDATA = 128;$/;"	v
+MAX_WAITQUEUE	TCPServer.h	/^		static const int MAX_WAITQUEUE = 2000; \/\/最大等待队列$/;"	m	class:TCPServer
+MainLoop	MainLoop.h	/^		MainLoop()$/;"	f	class:MainLoop
+MainLoop	MainLoop.h	/^class MainLoop : private NoCopyable , public CThread$/;"	c
+MainService	MainServer.h	/^		MainService(const std::string &name):zService(name)$/;"	f	class:MainService
+MainService	MainServer.h	/^class MainService : public Service$/;"	c
+NoCopyable	noCopyable.h	/^		NoCopyable(){}$/;"	f	class:NoCopyable
+NoCopyable	noCopyable.h	/^class NoCopyable$/;"	c
+PORT	client.cpp	13;"	d	file:
+PORT	server.cpp	15;"	d	file:
+PRJ_NAME	Makefile	/^PRJ_NAME=MyServer$/;"	m
+REQ_REG_CMD	command.h	/^const BYTE REQ_REG_CMD = 4;$/;"	v
+RET_CHECK_PSW_CMD	command.h	/^const BYTE RET_CHECK_PSW_CMD = 2;$/;"	v
+RET_SUCCESS_LOG_CMD	command.h	/^const BYTE RET_SUCCESS_LOG_CMD = 3;$/;"	v
+Service	Service.h	/^		Service(const std::string &name) : zService(name)$/;"	f	class:Service
+Service	Service.h	/^class Service : public zService$/;"	c
+TCPServer	TCPServer.cpp	/^TCPServer::TCPServer(const std::string &_name) :$/;"	f	class:TCPServer
+TCPServer	TCPServer.h	/^class TCPServer : private NoCopyable$/;"	c
+TURN_MSE	TCPServer.h	/^		static const int TURN_MSE = 2100;\/\/轮询超时，单位毫秒$/;"	m	class:TCPServer
+TcpTask	TcpTask.h	/^		TcpTask(const int _sock,const struct sockaddr_in *_addr):sock(_sock)$/;"	f	class:TcpTask
+TcpTask	TcpTask.h	/^class TcpTask$/;"	c
+Terminate	TcpTask.h	/^		bool Terminate()$/;"	f	class:TcpTask
+Terminate	zService.h	/^		void Terminate()$/;"	f	class:zService
+USER_CMD	command.h	4;"	d
+Unlock	CThread.h	/^		void Unlock(){pthread_mutex_unlock (&m_pLock);}$/;"	f	class:CCriticalSection
+WORD	Type.h	/^typedef unsigned short WORD;$/;"	t
+_CTHREAD_H	CThread.h	2;"	d
+_LOG_H	Log.h	2;"	d
+_MAINLOOP_H	MainLoop.h	2;"	d
+_SERVICE_H	Service.h	2;"	d
+_TCPSERVER_H	TCPServer.h	2;"	d
+_TYPE_DEF_H	Type.h	2;"	d
+_TcpTask_H	TcpTask.h	6;"	d
+_noCopyable_H	noCopyable.h	5;"	d
+_zService_H	zService.h	5;"	d
+accept	TCPServer.cpp	/^int TCPServer::accept(struct sockaddr_in *addr)$/;"	f	class:TCPServer
+addEpoll	TcpTask.h	/^		void addEpoll(int dpfd,unsigned int events,void *ptr)$/;"	f	class:TcpTask
+addr	TcpTask.h	/^		struct sockaddr_in addr;  \/\/套接口地址$/;"	m	class:TcpTask	typeref:struct:TcpTask::sockaddr_in
+bind	TCPServer.cpp	/^bool TCPServer::bind(const std::string &name,const unsigned short port)$/;"	f	class:TCPServer
+cmd	command.h	/^	BYTE cmd;$/;"	m	struct:t_NullCmd
+data	command.h	/^	char data[MAX_USERDATA+1];$/;"	m	struct:stRetSuccessLogCmd
+delEpoll	TcpTask.h	/^		void delEpoll(int dpfd,unsigned int events)$/;"	f	class:TcpTask
+delInstance	MainServer.h	/^		static void delInstance()$/;"	f	class:MainService
+delMe	MainLoop.h	/^		void delMe()$/;"	f	class:MainLoop
+epfd	MainLoop.h	/^		int epfd;$/;"	m	class:MainLoop
+epfdVec	MainLoop.h	/^		std::vector<epoll_event> epfdVec;$/;"	m	class:MainLoop
+error	command.h	/^	BYTE error;$/;"	m	struct:stRetCheckPasswordCmd
+final	CThread.h	/^		void final()$/;"	f	class:CThread
+final	Service.cpp	/^void Service::final()$/;"	f	class:Service
+genTCPTask	MainServer.cpp	/^void MainService::genTCPTask(const int sock,const struct sockaddr_in *addr)$/;"	f	class:MainService
+getInstance	MainServer.h	/^		static MainService &getInstance()$/;"	f	class:MainService
+getInstance	zService.h	/^		static zService *getInstance()$/;"	f	class:zService
+getMe	MainLoop.h	/^		MainLoop &getMe()$/;"	f	class:MainLoop
+getPoolSize	Service.h	/^		virtual const int getPoolSize() const$/;"	f	class:Service
+getPoolState	Service.h	/^		virtual const int getPoolState() const$/;"	f	class:Service
+hThread	CThread.h	/^		pthread_t hThread;       \/\/ this thread's HANDLE$/;"	m	class:CThread
+init	MainServer.cpp	/^bool MainService::init()$/;"	f	class:MainService
+init	Service.cpp	/^bool Service::init(unsigned short port)$/;"	f	class:Service
+instance	MainLoop.h	/^		static MainLoop * instance;$/;"	m	class:MainLoop
+instance	MainLoop.h	/^MainLoop * MainLoop::instance = NULL;$/;"	m	class:MainLoop
+instance	MainServer.cpp	/^MainService * MainService::instance = NULL;$/;"	m	class:MainService	file:
+instance	MainServer.h	/^		static MainService *instance;$/;"	m	class:MainService
+instance	Service.cpp	/^Service * Service::instance = NULL;$/;"	m	class:Service	file:
+instance	Service.h	/^		static Service *instance;$/;"	m	class:Service
+isFinal	CThread.h	/^		bool isFinal() const $/;"	f	class:CThread
+isReading	TcpTask.h	/^		bool isReading() const$/;"	f	class:TcpTask
+isTerminate	TcpTask.h	/^		bool isTerminate() const$/;"	f	class:TcpTask
+isTerminate	zService.h	/^		bool isTerminate() const$/;"	f	class:zService
+kdpfd	TCPServer.h	/^		int kdpfd; \/\/epool$/;"	m	class:TCPServer
+loginMsgParse	TcpTask.cpp	/^bool TcpTask::loginMsgParse(const unsigned char* ptNullCmd,const unsigned int cmdLen)$/;"	f	class:TcpTask
+m_pLock	CThread.h	/^		pthread_mutex_t m_pLock;$/;"	m	class:CCriticalSection
+main	MainServer.cpp	/^int main()$/;"	f
+main	client.cpp	/^int main(int argc, char* argv[], char* evp[]) $/;"	f
+main	server.cpp	/^int main(int argc, char* argv[], char* evp[]) $/;"	f
+maxTask	MainLoop.h	/^		static const std::vector<TcpTask*>::size_type maxTask = 256;$/;"	m	class:MainLoop
+message	Log.h	/^		char message[MAX_LOGBUFF];$/;"	m	class:Log
+msgParse	TcpTask.cpp	/^bool TcpTask::msgParse(const unsigned char* ptCmd,const unsigned int cmdLen)$/;"	f	class:TcpTask
+name	Log.h	/^		std::string name;$/;"	m	class:Log
+name	TCPServer.h	/^		std::string name; \/\/服务器名称$/;"	m	class:TCPServer
+name	command.h	/^	char name[MAX_NAMESIZE+1];$/;"	m	struct:stCheckPasswordCmd
+name	command.h	/^	char name[MAX_NAMESIZE+1];$/;"	m	struct:stReqRegCmd
+name	zService.h	/^		std::string name;$/;"	m	class:zService
+objects	Makefile	/^objects = CThread.o MainLoop.o MainServer.o Service.o TCPServer.o zService.o TcpTask.o Log.o$/;"	m
+over	CThread.h	/^		volatile bool over;$/;"	m	class:CThread
+para	command.h	/^	BYTE para;$/;"	m	struct:t_NullCmd
+printLog	Log.cpp	/^bool Log::printLog(const char *pattern, ...)$/;"	f	class:Log
+psw	command.h	/^	char psw[MAX_PSWSIZE+1];$/;"	m	struct:stCheckPasswordCmd
+psw	command.h	/^	char psw[MAX_PSWSIZE+1];$/;"	m	struct:stReqRegCmd
+putTask	MainLoop.h	/^		void putTask(TcpTask* tcpTask)$/;"	f	class:MainLoop
+reading	TcpTask.h	/^		bool reading;$/;"	m	class:TcpTask
+recvCmd	TcpTask.cpp	/^int TcpTask::recvCmd()$/;"	f	class:TcpTask
+reloadData	zService.h	/^		virtual void reloadData()$/;"	f	class:zService
+run	MainLoop.cpp	/^void MainLoop::run()$/;"	f	class:MainLoop
+sendCmd	TcpTask.cpp	/^bool TcpTask::sendCmd(const char *pstrcmd)$/;"	f	class:TcpTask
+serviceCallBack	Service.cpp	/^bool Service::serviceCallBack()$/;"	f	class:Service
+serviceInst	zService.h	/^		static zService *serviceInst;$/;"	m	class:zService
+serviceName	Service.h	/^		std::string serviceName;$/;"	m	class:Service
+setNonBlock	server.cpp	/^static bool setNonBlock(int fd) $/;"	f	file:
+setReading	TcpTask.h	/^		void setReading() $/;"	f	class:TcpTask
+sock	TCPServer.h	/^		int sock;$/;"	m	class:TCPServer
+sock	TcpTask.h	/^		int sock;  \/\/套接口$/;"	m	class:TcpTask
+stCheckPasswordCmd	command.h	/^	stCheckPasswordCmd()$/;"	f	struct:stCheckPasswordCmd
+stCheckPasswordCmd	command.h	/^struct stCheckPasswordCmd : public stLoginCmd$/;"	s
+stLoginCmd	command.h	/^	stLoginCmd()$/;"	f	struct:stLoginCmd
+stLoginCmd	command.h	/^struct stLoginCmd : public t_NullCmd$/;"	s
+stReqRegCmd	command.h	/^	stReqRegCmd()$/;"	f	struct:stReqRegCmd
+stReqRegCmd	command.h	/^struct stReqRegCmd : stLoginCmd$/;"	s
+stRetCheckPasswordCmd	command.h	/^	stRetCheckPasswordCmd()$/;"	f	struct:stRetCheckPasswordCmd
+stRetCheckPasswordCmd	command.h	/^struct stRetCheckPasswordCmd :  public stLoginCmd$/;"	s
+stRetSuccessLogCmd	command.h	/^	stRetSuccessLogCmd()$/;"	f	struct:stRetSuccessLogCmd
+stRetSuccessLogCmd	command.h	/^struct stRetSuccessLogCmd :  public stLoginCmd$/;"	s
+stUserPlayCmd	command.h	/^	stUserPlayCmd()$/;"	f	struct:stUserPlayCmd
+stUserPlayCmd	command.h	/^struct stUserPlayCmd : public t_NullCmd$/;"	s
+start	CThread.cpp	/^bool CThread::start()$/;"	f	class:CThread
+t_NullCmd	command.h	/^	t_NullCmd(const BYTE _cmd,const BYTE _para):cmd(_cmd),para(_para){}$/;"	f	struct:t_NullCmd
+t_NullCmd	command.h	/^struct t_NullCmd$/;"	s
+taskNum	MainLoop.h	/^		std::vector<epoll_event>::size_type taskNum;$/;"	m	class:MainLoop
+taskVec	MainLoop.h	/^		std::vector<TcpTask*> taskVec;$/;"	m	class:MainLoop
+tcpServer	Service.h	/^		TCPServer *tcpServer;\/\/TCP服务器实例指针$/;"	m	class:Service
+terminate	TcpTask.h	/^		void terminate()$/;"	f	class:TcpTask
+terminate	zService.h	/^		bool terminate;$/;"	m	class:zService
+terminating	TcpTask.h	/^		bool terminating;$/;"	m	class:TcpTask
+threadFunc	CThread.cpp	/^void *CThread::threadFunc(void *arg)$/;"	f	class:CThread
+userMsgParse	TcpTask.cpp	/^bool TcpTask::userMsgParse(const unsigned char* ptNullCmd,const unsigned int cmdLen)$/;"	f	class:TcpTask
+validate	zService.h	/^		virtual bool validate() \/\/是否初始化成功$/;"	f	class:zService
+zService	zService.h	/^		zService(const std::string &_name):name(_name)$/;"	f	class:zService
+zService	zService.h	/^class zService : private NoCopyable$/;"	c
+~CCriticalSection	CThread.h	/^		virtual ~CCriticalSection()$/;"	f	class:CCriticalSection
+~NoCopyable	noCopyable.h	/^		~NoCopyable(){}$/;"	f	class:NoCopyable
+~Service	Service.h	/^		virtual ~Service() {instance = NULL;}$/;"	f	class:Service
+~TCPServer	TCPServer.cpp	/^TCPServer::~TCPServer()$/;"	f	class:TCPServer
+~zService	zService.h	/^		virtual ~zService() {serviceInst = NULL;}$/;"	f	class:zService

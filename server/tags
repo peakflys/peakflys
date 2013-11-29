@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AI	logicServer/swordsman.h	/^void Swordsman::AI(Player &p)\/\/电脑AI$/;"	f	class:Swordsman
+AP	logicServer/player.h	/^	int HP,HPmax,MP,MPmax,AP,DP,speed,EXP,LV;\/\/一般属性$/;"	m	class:Player
+Archer	logicServer/archer.h	/^Archer::Archer(int i,char *cptr)$/;"	f	class:Archer
+Archer	logicServer/archer.h	/^class Archer:public Player\/\/弓箭手类和剑士类差不多，就是数值设定不同$/;"	c
+CC	Makefile	/^CC = g++$/;"	m
+DEBUG_FLAG	Makefile	/^DEBUG_FLAG = -g -Werror -Wall $/;"	m
+DP	logicServer/player.h	/^	int HP,HPmax,MP,MPmax,AP,DP,speed,EXP,LV;\/\/一般属性$/;"	m	class:Player
+Death	logicServer/player.h	/^bool Player::Death()$/;"	f	class:Player
+EXP	logicServer/player.h	/^	int HP,HPmax,MP,MPmax,AP,DP,speed,EXP,LV;\/\/一般属性$/;"	m	class:Player
+HP	logicServer/player.h	/^	int HP,HPmax,MP,MPmax,AP,DP,speed,EXP,LV;\/\/一般属性$/;"	m	class:Player
+HPmax	logicServer/player.h	/^	int HP,HPmax,MP,MPmax,AP,DP,speed,EXP,LV;\/\/一般属性$/;"	m	class:Player
+LIBS	Makefile	/^LIBS := -lpthread$/;"	m
+LV	logicServer/player.h	/^	int HP,HPmax,MP,MPmax,AP,DP,speed,EXP,LV;\/\/一般属性$/;"	m	class:Player
+MP	logicServer/player.h	/^	int HP,HPmax,MP,MPmax,AP,DP,speed,EXP,LV;\/\/一般属性$/;"	m	class:Player
+MPmax	logicServer/player.h	/^	int HP,HPmax,MP,MPmax,AP,DP,speed,EXP,LV;\/\/一般属性$/;"	m	class:Player
+Mage	logicServer/mage.h	/^Mage::Mage(int i,char *cptr)$/;"	f	class:Mage
+Mage	logicServer/mage.h	/^class Mage:public Player\/\/法师类和剑士类差不多，就是数值设定不同$/;"	c
+MainService	MainServer.h	/^		MainService(const std::string &name):Service(name),log(name)$/;"	f	class:MainService
+MainService	MainServer.h	/^class MainService : public Service$/;"	c
+PRJ_NAME	Makefile	/^PRJ_NAME = MyServer$/;"	m
+Player	logicServer/player.h	/^class Player\/\/人物类$/;"	c
+ReFill	logicServer/player.h	/^void Player::ReFill()$/;"	f	class:Player
+Swordsman	logicServer/swordsman.h	/^Swordsman::Swordsman(int i,char *cptr)\/\/构造函数$/;"	f	class:Swordsman
+Swordsman	logicServer/swordsman.h	/^class Swordsman:public Player\/\/剑士类，继承人物类$/;"	c
+_MAINSERVER_H	MainServer.h	2;"	d
+ar	logicServer/player.h	/^enum property{sw,ar,mg};\/\/设置三种职业属性，枚举类型$/;"	e	enum:property
+attack	logicServer/archer.h	/^bool Archer::attack(Player &p)$/;"	f	class:Archer
+attack	logicServer/mage.h	/^bool Mage::attack(Player &p)$/;"	f	class:Mage
+attack	logicServer/swordsman.h	/^bool Swordsman::attack(Player &p)$/;"	f	class:Swordsman
+bag	logicServer/player.h	/^	container bag;\/\/物品栏$/;"	m	class:Player
+container	logicServer/container.h	/^class container\/\/人物的物品栏$/;"	c
+container	logicServer/container.h	/^container::container()$/;"	f	class:container
+death	logicServer/player.h	/^	bool death;\/\/是否死亡$/;"	m	class:Player
+delInstance	MainServer.h	/^		static void delInstance()$/;"	f	class:MainService
+display	logicServer/container.h	/^void container::display()$/;"	f	class:container
+genTCPTask	MainServer.cpp	/^void MainService::genTCPTask(const int sock,const struct sockaddr_in *addr)$/;"	f	class:MainService
+getInstance	MainServer.h	/^		static MainService &getInstance()$/;"	f	class:MainService
+init	MainServer.cpp	/^bool MainService::init()$/;"	f	class:MainService
+instance	MainServer.cpp	/^MainService * MainService::instance = NULL;$/;"	m	class:MainService	file:
+instance	MainServer.h	/^		static MainService *instance;$/;"	m	class:MainService
+isDead	logicServer/player.h	/^void Player::isDead()$/;"	f	class:Player
+isLevelUp	logicServer/archer.h	/^void Archer::isLevelUp()$/;"	f	class:Archer
+isLevelUp	logicServer/mage.h	/^void Mage::isLevelUp()$/;"	f	class:Mage
+isLevelUp	logicServer/swordsman.h	/^void Swordsman::isLevelUp()$/;"	f	class:Swordsman
+log	MainServer.h	/^		Log log;$/;"	m	class:MainService
+main	MainServer.cpp	/^int main()$/;"	f
+main	logicServer/main.cpp	/^int main()$/;"	f
+mg	logicServer/player.h	/^enum property{sw,ar,mg};\/\/设置三种职业属性，枚举类型$/;"	e	enum:property
+nOfHeal	logicServer/container.h	/^int container::nOfHeal()$/;"	f	class:container
+nOfMW	logicServer/container.h	/^int container::nOfMW()$/;"	f	class:container
+name	logicServer/player.h	/^	char name[10];\/\/人物名称$/;"	m	class:Player
+numOfHeal	logicServer/container.h	/^	int numOfHeal;\/\/回复剂数$/;"	m	class:container
+numOfMagicWater	logicServer/container.h	/^	int numOfMagicWater;\/\/魔法水数$/;"	m	class:container
+objects	Makefile	/^objects = CThread.o zService.o MainLoop.o MainServer.o Service.o TCPServer.o TcpTask.o Log.o$/;"	m
+property	logicServer/player.h	/^enum property{sw,ar,mg};\/\/设置三种职业属性，枚举类型$/;"	g
+role	logicServer/player.h	/^	property role;\/\/人物职业（角色）$/;"	m	class:Player
+serverPort	MainServer.h	/^const WORD serverPort = 9999;$/;"	v
+set	logicServer/container.h	/^void container::set(int i,int j)$/;"	f	class:container
+showRole	logicServer/player.h	/^char Player::showRole()$/;"	f	class:Player
+showinfo	logicServer/player.h	/^void showinfo(Player &p1,Player &p2)\/\/纯粹的输出问题$/;"	f
+specialatt	logicServer/archer.h	/^bool Archer::specialatt(Player &p)$/;"	f	class:Archer
+specialatt	logicServer/mage.h	/^bool Mage::specialatt(Player &p)$/;"	f	class:Mage
+specialatt	logicServer/swordsman.h	/^bool Swordsman::specialatt(Player &p)$/;"	f	class:Swordsman
+speed	logicServer/player.h	/^	int HP,HPmax,MP,MPmax,AP,DP,speed,EXP,LV;\/\/一般属性$/;"	m	class:Player
+sw	logicServer/player.h	/^enum property{sw,ar,mg};\/\/设置三种职业属性，枚举类型$/;"	e	enum:property
+transfer	logicServer/player.h	/^void Player::transfer(Player &p)$/;"	f	class:Player
+useHeal	logicServer/container.h	/^bool container::useHeal()$/;"	f	class:container
+useHeal	logicServer/player.h	/^bool Player::useHeal()$/;"	f	class:Player
+useMW	logicServer/container.h	/^bool container::useMW()$/;"	f	class:container
+useMW	logicServer/player.h	/^bool Player::useMW()$/;"	f	class:Player

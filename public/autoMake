@@ -1,0 +1,1 @@
+g++ -o MyServer -g CThread.cpp  Log.cpp  MainLoop.cpp MainServer.cpp Service.cpp  TCPServer.cpp TcpTask.cpp zService.cpp -lpthread
